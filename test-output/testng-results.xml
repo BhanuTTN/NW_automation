@@ -2,30 +2,30 @@
 <testng-results ignored="0" total="8" passed="2" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-04T10:30:44 IST" name="Suite" finished-at="2023-05-04T10:31:22 IST" duration-ms="37784">
+  <suite started-at="2023-05-04T14:20:18 IST" name="Suite" finished-at="2023-05-04T14:21:02 IST" duration-ms="43221">
     <groups>
     </groups>
-    <test started-at="2023-05-04T10:30:44 IST" name="Test" finished-at="2023-05-04T10:31:22 IST" duration-ms="37784">
+    <test started-at="2023-05-04T14:20:18 IST" name="Test" finished-at="2023-05-04T14:21:02 IST" duration-ms="43221">
       <class name="testCases.LoginTest">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:testCases.LoginTest@6253c26]" started-at="2023-05-04T10:30:44 IST" name="Setup" finished-at="2023-05-04T10:30:53 IST" duration-ms="8470" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:testCases.LoginTest@6253c26]" started-at="2023-05-04T14:20:18 IST" name="Setup" finished-at="2023-05-04T14:20:28 IST" duration-ms="10008" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="loginPageTitleTest()[pri:0, instance:testCases.LoginTest@6253c26]" started-at="2023-05-04T10:30:53 IST" name="loginPageTitleTest" finished-at="2023-05-04T10:30:53 IST" duration-ms="26" status="PASS">
+        <test-method signature="loginPageTitleTest()[pri:0, instance:testCases.LoginTest@6253c26]" started-at="2023-05-04T14:20:28 IST" name="loginPageTitleTest" finished-at="2023-05-04T14:20:28 IST" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method signature="logindetail()[pri:0, instance:testCases.LoginTest@6253c26]" started-at="2023-05-04T10:30:53 IST" name="logindetail" finished-at="2023-05-04T10:31:02 IST" duration-ms="9316" status="PASS">
+        <test-method signature="logindetail()[pri:0, instance:testCases.LoginTest@6253c26]" started-at="2023-05-04T14:20:28 IST" name="logindetail" finished-at="2023-05-04T14:20:38 IST" duration-ms="9130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logindetail -->
-        <test-method is-config="true" signature="close()[pri:0, instance:testCases.LoginTest@6253c26]" started-at="2023-05-04T10:31:21 IST" name="close" finished-at="2023-05-04T10:31:22 IST" duration-ms="800" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:testCases.LoginTest@6253c26]" started-at="2023-05-04T14:21:01 IST" name="close" finished-at="2023-05-04T14:21:02 IST" duration-ms="482" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- testCases.LoginTest -->
       <class name="testCases.HomePageTest">
-        <test-method signature="checkHeader()[pri:0, instance:testCases.HomePageTest@61001b64]" started-at="2023-05-04T10:31:02 IST" name="checkHeader" finished-at="2023-05-04T10:31:02 IST" duration-ms="0" status="FAIL">
+        <test-method signature="checkHeader()[pri:0, instance:testCases.HomePageTest@61001b64]" started-at="2023-05-04T14:20:38 IST" name="checkHeader" finished-at="2023-05-04T14:20:38 IST" duration-ms="2" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "pageObjects.Homepage.validateHeader()" because "this.homePage" is null]]>
@@ -65,29 +65,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkHeader -->
-        <test-method signature="homePageTitleTest()[pri:0, instance:testCases.HomePageTest@61001b64]" started-at="2023-05-04T10:31:02 IST" name="homePageTitleTest" finished-at="2023-05-04T10:31:21 IST" duration-ms="18954" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method signature="homePageTitleTest()[pri:0, instance:testCases.HomePageTest@61001b64]" started-at="2023-05-04T14:20:38 IST" name="homePageTitleTest" finished-at="2023-05-04T14:21:01 IST" duration-ms="23485" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[disconnected: received Inspector.detached event
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=113.0.5672.64)
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fc1032baf44c577bcdf87e748859eb4a, findElement {using=xpath, value=(//input[@placeholder="Search for Newers, Posts and Hashtags"])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.64, chrome: {chromedriverVersion: 113.0.5672.24 (65f30d4e8051..., userDataDir: C:\Users\BHANUG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49445}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49445/devtoo..., se:cdpVersion: 113.0.5672.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc1032baf44c577bcdf87e748859eb4a]]>
+Command: [520445d280c2b9d24b6fd784a8a33420, findElement {using=xpath, value=(//input[@placeholder="Search for Newers, Posts and Hashtags"])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.64, chrome: {chromedriverVersion: 113.0.5672.24 (65f30d4e8051..., userDataDir: C:\Users\BHANUG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52425/devtoo..., se:cdpVersion: 113.0.5672.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 520445d280c2b9d24b6fd784a8a33420]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=113.0.5672.64)
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fc1032baf44c577bcdf87e748859eb4a, findElement {using=xpath, value=(//input[@placeholder="Search for Newers, Posts and Hashtags"])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.64, chrome: {chromedriverVersion: 113.0.5672.24 (65f30d4e8051..., userDataDir: C:\Users\BHANUG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49445}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49445/devtoo..., se:cdpVersion: 113.0.5672.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc1032baf44c577bcdf87e748859eb4a
+Command: [520445d280c2b9d24b6fd784a8a33420, findElement {using=xpath, value=(//input[@placeholder="Search for Newers, Posts and Hashtags"])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.64, chrome: {chromedriverVersion: 113.0.5672.24 (65f30d4e8051..., userDataDir: C:\Users\BHANUG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52425/devtoo..., se:cdpVersion: 113.0.5672.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 520445d280c2b9d24b6fd784a8a33420
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -104,13 +104,14 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-at pageObjects.Homepage.ValidateTitle(Homepage.java:59)
+at jdk.proxy2/jdk.proxy2.$Proxy16.toString(Unknown Source)
+at java.base/java.lang.String.valueOf(String.java:4225)
+at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:298)
+at java.base/java.lang.String.valueOf(String.java:4225)
+at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at pageObjects.Homepage.ValidateTitle(Homepage.java:76)
 at testCases.HomePageTest.homePageTitleTest(HomePageTest.java:26)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
@@ -140,11 +141,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageTitleTest -->
-        <test-method signature="notification()[pri:0, instance:testCases.HomePageTest@61001b64]" started-at="2023-05-04T10:31:21 IST" name="notification" finished-at="2023-05-04T10:31:21 IST" duration-ms="41" status="FAIL">
+        <test-method signature="notification()[pri:0, instance:testCases.HomePageTest@61001b64]" started-at="2023-05-04T14:21:01 IST" name="notification" finished-at="2023-05-04T14:21:01 IST" duration-ms="6" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
@@ -153,9 +154,9 @@ from unknown error: web view not found
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fc1032baf44c577bcdf87e748859eb4a, findElement {using=css selector, value=.mat-tooltip-trigger.notification_icon}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.64, chrome: {chromedriverVersion: 113.0.5672.24 (65f30d4e8051..., userDataDir: C:\Users\BHANUG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49445}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49445/devtoo..., se:cdpVersion: 113.0.5672.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc1032baf44c577bcdf87e748859eb4a]]>
+Command: [520445d280c2b9d24b6fd784a8a33420, findElement {using=css selector, value=.mat-tooltip-trigger.notification_icon}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.64, chrome: {chromedriverVersion: 113.0.5672.24 (65f30d4e8051..., userDataDir: C:\Users\BHANUG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52425/devtoo..., se:cdpVersion: 113.0.5672.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 520445d280c2b9d24b6fd784a8a33420]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
@@ -164,9 +165,9 @@ from unknown error: web view not found
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fc1032baf44c577bcdf87e748859eb4a, findElement {using=css selector, value=.mat-tooltip-trigger.notification_icon}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.64, chrome: {chromedriverVersion: 113.0.5672.24 (65f30d4e8051..., userDataDir: C:\Users\BHANUG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49445}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49445/devtoo..., se:cdpVersion: 113.0.5672.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc1032baf44c577bcdf87e748859eb4a
+Command: [520445d280c2b9d24b6fd784a8a33420, findElement {using=css selector, value=.mat-tooltip-trigger.notification_icon}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.64, chrome: {chromedriverVersion: 113.0.5672.24 (65f30d4e8051..., userDataDir: C:\Users\BHANUG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52425/devtoo..., se:cdpVersion: 113.0.5672.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 520445d280c2b9d24b6fd784a8a33420
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -184,7 +185,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
-at pageObjects.Homepage.validatenotificatoinBtn(Homepage.java:64)
+at pageObjects.Homepage.validatenotificatoinBtn(Homepage.java:81)
 at testCases.HomePageTest.notification(HomePageTest.java:50)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
@@ -218,7 +219,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- notification -->
-        <test-method signature="nwLogotest()[pri:0, instance:testCases.HomePageTest@61001b64]" started-at="2023-05-04T10:31:21 IST" name="nwLogotest" finished-at="2023-05-04T10:31:21 IST" duration-ms="41" status="FAIL">
+        <test-method signature="nwLogotest()[pri:0, instance:testCases.HomePageTest@61001b64]" started-at="2023-05-04T14:21:01 IST" name="nwLogotest" finished-at="2023-05-04T14:21:01 IST" duration-ms="5" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
@@ -227,9 +228,9 @@ from unknown error: web view not found
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fc1032baf44c577bcdf87e748859eb4a, findElement {using=xpath, value=(//a[@routerlinkactive='active' and @href='/home'])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.64, chrome: {chromedriverVersion: 113.0.5672.24 (65f30d4e8051..., userDataDir: C:\Users\BHANUG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49445}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49445/devtoo..., se:cdpVersion: 113.0.5672.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc1032baf44c577bcdf87e748859eb4a]]>
+Command: [520445d280c2b9d24b6fd784a8a33420, findElement {using=xpath, value=(//a[@routerlinkactive='active' and @href='/home'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.64, chrome: {chromedriverVersion: 113.0.5672.24 (65f30d4e8051..., userDataDir: C:\Users\BHANUG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52425/devtoo..., se:cdpVersion: 113.0.5672.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 520445d280c2b9d24b6fd784a8a33420]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
@@ -238,9 +239,9 @@ from unknown error: web view not found
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fc1032baf44c577bcdf87e748859eb4a, findElement {using=xpath, value=(//a[@routerlinkactive='active' and @href='/home'])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.64, chrome: {chromedriverVersion: 113.0.5672.24 (65f30d4e8051..., userDataDir: C:\Users\BHANUG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49445}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49445/devtoo..., se:cdpVersion: 113.0.5672.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc1032baf44c577bcdf87e748859eb4a
+Command: [520445d280c2b9d24b6fd784a8a33420, findElement {using=xpath, value=(//a[@routerlinkactive='active' and @href='/home'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.64, chrome: {chromedriverVersion: 113.0.5672.24 (65f30d4e8051..., userDataDir: C:\Users\BHANUG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52425/devtoo..., se:cdpVersion: 113.0.5672.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 520445d280c2b9d24b6fd784a8a33420
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -258,7 +259,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
-at pageObjects.Homepage.validatenwLogo(Homepage.java:74)
+at pageObjects.Homepage.validatenwLogo(Homepage.java:91)
 at testCases.HomePageTest.nwLogotest(HomePageTest.java:33)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
@@ -292,7 +293,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nwLogotest -->
-        <test-method signature="searchBar()[pri:0, instance:testCases.HomePageTest@61001b64]" started-at="2023-05-04T10:31:21 IST" name="searchBar" finished-at="2023-05-04T10:31:21 IST" duration-ms="19" status="FAIL">
+        <test-method signature="searchBar()[pri:0, instance:testCases.HomePageTest@61001b64]" started-at="2023-05-04T14:21:01 IST" name="searchBar" finished-at="2023-05-04T14:21:01 IST" duration-ms="3" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
@@ -301,9 +302,9 @@ from unknown error: web view not found
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fc1032baf44c577bcdf87e748859eb4a, findElement {using=xpath, value=(//input[@placeholder="Search for Newers, Posts and Hashtags"])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.64, chrome: {chromedriverVersion: 113.0.5672.24 (65f30d4e8051..., userDataDir: C:\Users\BHANUG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49445}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49445/devtoo..., se:cdpVersion: 113.0.5672.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc1032baf44c577bcdf87e748859eb4a]]>
+Command: [520445d280c2b9d24b6fd784a8a33420, findElement {using=xpath, value=(//input[@placeholder="Search for Newers, Posts and Hashtags"])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.64, chrome: {chromedriverVersion: 113.0.5672.24 (65f30d4e8051..., userDataDir: C:\Users\BHANUG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52425/devtoo..., se:cdpVersion: 113.0.5672.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 520445d280c2b9d24b6fd784a8a33420]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
@@ -312,9 +313,9 @@ from unknown error: web view not found
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fc1032baf44c577bcdf87e748859eb4a, findElement {using=xpath, value=(//input[@placeholder="Search for Newers, Posts and Hashtags"])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.64, chrome: {chromedriverVersion: 113.0.5672.24 (65f30d4e8051..., userDataDir: C:\Users\BHANUG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49445}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49445/devtoo..., se:cdpVersion: 113.0.5672.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc1032baf44c577bcdf87e748859eb4a
+Command: [520445d280c2b9d24b6fd784a8a33420, findElement {using=xpath, value=(//input[@placeholder="Search for Newers, Posts and Hashtags"])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.64, chrome: {chromedriverVersion: 113.0.5672.24 (65f30d4e8051..., userDataDir: C:\Users\BHANUG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52425/devtoo..., se:cdpVersion: 113.0.5672.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 520445d280c2b9d24b6fd784a8a33420
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -332,7 +333,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
-at pageObjects.Homepage.validateSearchBar(Homepage.java:106)
+at pageObjects.Homepage.validateSearchBar(Homepage.java:123)
 at testCases.HomePageTest.searchBar(HomePageTest.java:44)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
@@ -366,7 +367,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchBar -->
-        <test-method signature="verifyLogTicket()[pri:0, instance:testCases.HomePageTest@61001b64]" started-at="2023-05-04T10:31:21 IST" name="verifyLogTicket" finished-at="2023-05-04T10:31:21 IST" duration-ms="20" status="FAIL">
+        <test-method signature="verifyLogTicket()[pri:0, instance:testCases.HomePageTest@61001b64]" started-at="2023-05-04T14:21:01 IST" name="verifyLogTicket" finished-at="2023-05-04T14:21:01 IST" duration-ms="4" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
@@ -375,9 +376,9 @@ from unknown error: web view not found
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fc1032baf44c577bcdf87e748859eb4a, findElement {using=css selector, value=.mat-tooltip-trigger.log_ticket_icon[mattooltip='Log Ticket']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.64, chrome: {chromedriverVersion: 113.0.5672.24 (65f30d4e8051..., userDataDir: C:\Users\BHANUG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49445}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49445/devtoo..., se:cdpVersion: 113.0.5672.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc1032baf44c577bcdf87e748859eb4a]]>
+Command: [520445d280c2b9d24b6fd784a8a33420, findElement {using=css selector, value=.mat-tooltip-trigger.log_ticket_icon[mattooltip='Log Ticket']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.64, chrome: {chromedriverVersion: 113.0.5672.24 (65f30d4e8051..., userDataDir: C:\Users\BHANUG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52425/devtoo..., se:cdpVersion: 113.0.5672.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 520445d280c2b9d24b6fd784a8a33420]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
@@ -386,9 +387,9 @@ from unknown error: web view not found
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fc1032baf44c577bcdf87e748859eb4a, findElement {using=css selector, value=.mat-tooltip-trigger.log_ticket_icon[mattooltip='Log Ticket']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.64, chrome: {chromedriverVersion: 113.0.5672.24 (65f30d4e8051..., userDataDir: C:\Users\BHANUG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49445}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49445/devtoo..., se:cdpVersion: 113.0.5672.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc1032baf44c577bcdf87e748859eb4a
+Command: [520445d280c2b9d24b6fd784a8a33420, findElement {using=css selector, value=.mat-tooltip-trigger.log_ticket_icon[mattooltip='Log Ticket']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.64, chrome: {chromedriverVersion: 113.0.5672.24 (65f30d4e8051..., userDataDir: C:\Users\BHANUG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52425/devtoo..., se:cdpVersion: 113.0.5672.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 520445d280c2b9d24b6fd784a8a33420
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -406,7 +407,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
-at pageObjects.Homepage.validatecreateTicketbtn(Homepage.java:78)
+at pageObjects.Homepage.validatecreateTicketbtn(Homepage.java:95)
 at testCases.HomePageTest.verifyLogTicket(HomePageTest.java:38)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)

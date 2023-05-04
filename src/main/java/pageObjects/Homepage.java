@@ -5,6 +5,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -45,11 +46,27 @@ public class Homepage extends BaseClass {
 
 	@FindBy(xpath = "//span[contains(text(),'Org Chart')]")
 	WebElement orgchart;
-	
-	@FindBy(css =".page_heading")
+
+	@FindBy(css = ".page_heading")
 	WebElement header;
+
+	@FindBy(css = "input[placeholder='What’s on your mind?']")
+	WebElement createpost;
+
+	@FindBy(css = "div[class='other_options'] span[class='more_icon']")
+	WebElement moreiconbtn;
+
+	@FindBy(className = "feedback")
+	WebElement feedbackbtn;
+
+	@FindBy(id = "auto_tour")
+	WebElement autotourbtn;
 	
+	@FindBy(css = "img[alt='favicon']")
+	WebElement ttnlogo;
 	
+	@FindBy(css="app-nav[class='ng-star-inserted'] nav app-footer footer span")
+	WebElement ttnfooter;
 
 	public Homepage() throws IOException {
 		PageFactory.initElements(driver, this);
@@ -59,12 +76,12 @@ public class Homepage extends BaseClass {
 		wd.until(ExpectedConditions.visibilityOf(searchNewer));
 		return driver.getTitle();
 	}
-	
+
 	public boolean validatenotificatoinBtn() {
-		return  notibtn.isDisplayed();
-		
+		return notibtn.isDisplayed();
+
 	}
-	
+
 	public String validateHeader() {
 		String s = header.getText();
 		return s;
@@ -101,19 +118,38 @@ public class Homepage extends BaseClass {
 	public boolean validateOrgChart() {
 		return orgchart.isDisplayed();
 	}
-	
+
 	public boolean validateSearchBar() {
 		return searchNewer.isDisplayed();
 	}
-	
+
+	public CreateTicket createNewTicket() {
+		return createNewTicket();
+	}
+
+	public boolean validateCreatepost() {
+		return createpost.isDisplayed();
+	}
+
+	public boolean validateMoreIcon() {
+		return moreiconbtn.isDisplayed();
+	}
+
+	public boolean validatefeedbackbtn() {
+		Actions ac = new Actions(driver);
+		ac.moveToElement(feedbackbtn).perform();
+		return feedbackbtn.isDisplayed();
+	}
+
+	public boolean validateAutotourbtn() {
+		Actions ac = new Actions(driver);
+		ac.moveToElement(feedbackbtn).perform();
+		return moreiconbtn.isDisplayed();
+	}
+
 	public searchNewerResult searchNewerfunc() {
 		searchNewer.sendKeys("Bhanu gusain");
 		searchNewer.sendKeys(Keys.ENTER);
 		return new searchNewerResult();
 	}
-	
-	public CreateTicket createNewTicket() {
-		return createNewTicket();
-	}
-
 }
